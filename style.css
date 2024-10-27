@@ -291,6 +291,61 @@ section.sobre.flex{
 .galeria img:hover {
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
+/*Topo do portfolio*/
+.topo-do-portfoli {
+    background-color: #f5f5f518; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.interface {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centralização */
+}
+
+.flex {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza os itens na horizontal */
+}
+
+.txt-topo-portfolio nav ul {
+    list-style: none; /* Remove marcadores */
+    padding: 0; /* Remove espaçamento */
+    margin: 0; /* Remove margens padrão */
+    display: flex; /* Exibe itens em linha */
+    justify-content: center; /* Centraliza a lista */
+}
+
+.txt-topo-portfolio nav ul li {
+    margin-right: 150px; /* Espaçamento entre itens */
+}
+
+.txt-topo-portfolio nav ul li:last-child {
+    margin-right: 0; /* Remove margem do último item */
+}
+
+.txt-topo-portfolio nav ul li a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #fff; /* Cor do texto */
+    transition: color 0.3s; /* Transição suave */
+    font-size: 20px;
+}
+
+.txt-topo-portfolio nav ul li a:hover {
+    color: #ff6347; /* Cor ao passar o mouse */
+}
+
+
+
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
 
 /* ESTILO DO PORTFOLIO*/
 section.portfolio{
@@ -407,7 +462,27 @@ footer .line-footer p, a{
 .btn-abrir-menu svg{
     display: none;
 }
+footer a {
+    color: #ffffff5b;
+    text-decoration: none;
+    display: inline-block;
+    
+}
 
+footer nav.voltar-topo a:hover {
+    color: rgba(218, 165, 32, 0.541);
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav.voltar-topo ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
 @media screen and (max-width: 1020px){
     /*classes gerais*/
     .flex{
@@ -451,7 +526,17 @@ footer .line-footer p, a{
     section.especialidades {
         padding: 40px 8%;
     }
+    /*Galeria*/
+    .galeria img{
+        display: block;
+        width: 100%;
+        padding: 10px 0%;
+    }
+    .txt-topo-portfolio nav ul li {
+        margin-right: 20px; /* Espaçamento entre itens */
+    }
 
+    
 /*SOBRE*/
 section.sobre{
     padding: 80px 4%;
