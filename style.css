@@ -245,6 +245,7 @@ section.sobre.flex{
     margin: 20px;
     text-align: justify;
     margin-left: 20px; /* Adiciona espaço à direita da imagem */
+    font-size: 25px;
 
 }
  .btn-social button{
